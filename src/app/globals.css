@@ -1,0 +1,70 @@
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary-color: #333;
+  --hover-color: #ff9900;
+  --active-color: #ff6600;
+  --warning-color: red;
+  --approve-color: green;
+  --gray-rgb: 0, 0, 0;
+  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

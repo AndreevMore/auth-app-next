@@ -1,0 +1,52 @@
+.header {
+  background-color: var(--primary-color);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navItem {
+  margin-right: 20px;
+}
+
+.navItem:last-child {
+  margin-right: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+  &:hover {
+    color: var(--hover-color);
+  }
+}
+
+.active {
+  color: var(--active-color);
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  button {
+    margin: 0;
+  }
+}

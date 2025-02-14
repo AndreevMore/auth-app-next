@@ -1,0 +1,8 @@
+.approved {
+  color: var(--approve-color);
+}
+
+.warning {
+  color: var(--warning-color);
+  white-space: nowrap;
+}
