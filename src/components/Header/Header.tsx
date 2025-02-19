@@ -13,6 +13,7 @@ type NavButton = {
 const navButtons: NavButton[] = [
   { label: "Main", href: "/" },
   { label: "Dasboard", href: "/dashboard" },
+  { label: "Counter", href: "/counter" },
   { label: "Log In", href: "/login" },
 ];
 
