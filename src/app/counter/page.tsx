@@ -40,8 +40,51 @@ const Counter = () => {
         <h1>Counter: {count}</h1>
         <button onClick={handleChangeCount}>Increase counter</button>
 
-        <p>for run wss server in console run command &quot;node wsserver.js&quot;</p>
+        <p>
+          for run wss server in console run command &quot;node wsserver.js&quot;
+        </p>
       </main>
+
+      <div>
+        <h2>What I would improve:</h2>
+        <ul>
+          <li>
+            <p>
+              Reconnection and error handling – I would add error handling for
+              connection drops with automatic reconnection, as well as
+              notifications for users if the connection is lost.
+            </p>
+          </li>
+          <li>
+            <p>
+              Data sending optimization – I would change the logic so that the
+              server requests data only when necessary, rather than on every
+              counter update.
+            </p>
+          </li>
+          <li>
+            <p>
+              Acknowledgments and logging – I would add a mechanism to
+              acknowledge receipt of data from the client to the server and
+              implement logging for better tracking.
+            </p>
+          </li>
+          <li>
+            <p>
+              UI for connection status – I would implement a WebSocket
+              connection status indicator (e.g., "Connected" / "Disconnected"
+              text).
+            </p>
+          </li>
+          <li>
+            <p>
+              Authorization system – I would add authorization for WebSocket
+              connections, using tokens for secure interaction with multiple
+              clients.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

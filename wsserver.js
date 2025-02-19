@@ -19,6 +19,4 @@ wss.on("connection", function connection(ws) {
     console.log("ws connection closed");
     clearInterval(interval);
   });
-
-//   ws.send("something");
 });
